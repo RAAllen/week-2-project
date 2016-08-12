@@ -1,4 +1,6 @@
 body {
+  background-color: #fffff0;
+  color: #006400;
   margin: 40px;
 }
 
@@ -28,4 +30,9 @@ h3 {
 
 #c-net {
   display: none;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 25px;
 }
