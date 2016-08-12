@@ -125,6 +125,16 @@ $(document).ready(function(){
       $("#c-net").hide();
       $("#quiz").hide();
     }
-
   });
+
+  $("#reQuiz").click(function(event){
+    event.preventDefault();
+    $("#quiz").show();
+    $("#css-design").hide();
+    $("#ruby-rails").hide();
+    $("#php-drupal").hide();
+    $("#java-android").hide();
+    $("#c-net").hide();
+  });
+
 });
