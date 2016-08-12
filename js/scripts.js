@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    // debugger;
 
     var questionOnePoints = $("#questionOneAnswer").val();
     var questionTwoPoints = $("#questionTwoAnswer").val();
