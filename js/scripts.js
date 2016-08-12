@@ -19,7 +19,7 @@ $(document).ready(function(){
         questionOneFinal = 3;
       } else if (questionOnePoints === "phpAnswer") {
         questionOneFinal = 4;
-      } else if (questionOnePoints === "cssAnswer") {
+      } else {
         questionOneFinal = 5;
       }
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
         questionOneFinal = 3;
       } else if (questionTwoPoints === "phpAnswer") {
         questionTwoFinal = 4;
-      } else (questionTwoPoints === "cssAnswer") {
+      } else {
         questionTwoFinal = 5;
       }
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
         questionThreeFinal = 3;
       } else if (questionThreePoints === "phpAnswer") {
         questionThreeFinal = 4;
-      } else (questionThreePoints === "cssAnswer") {
+      } else {
         questionThreeFinal = 5;
       }
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
         questionFourFinal = 3;
       } else if (questionFourPoints === "phpAnswer") {
         questionFourFinal = 4;
-      } else (questionFourPoints === "cssAnswer") {
+      } else {
         questionFourFinal = 5;
       }
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
         questionFiveFinal = 3;
       } else if (questionFivePoints === "phpAnswer") {
         questionFiveFinal = 4;
-      } else (questionFivePoints === "cssAnswer") {
+      } else {
         questionFiveFinal = 5;
       }
 
@@ -85,12 +85,45 @@ $(document).ready(function(){
         questionSixFinal = 3;
       } else if (questionSixPoints === "phpAnswer") {
         questionSixFinal = 4;
-      } else (questionSixPoints === "cssAnswer") {
+      } else {
         questionSixFinal = 5;
       }
 
     if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 9) {
-      display
+      $("#c-net").show();
+      $("#ruby-rails").hide();
+      $("#php-drupal").hide();
+      $("#java-android").hide();
+      $("#css-design").hide();
+      $("#quiz").hide();
+    } else if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 14) {
+      $("#java-android").show();
+      $("#ruby-rails").hide();
+      $("#php-drupal").hide();
+      $("#css-design").hide();
+      $("#c-net").hide();
+      $("#quiz").hide();
+    } else if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 19) {
+      $("#ruby-rails").show();
+      $("#php-drupal").hide();
+      $("#java-android").hide();
+      $("#css-design").hide();
+      $("#c-net").hide();
+      $("#quiz").hide();
+    } else if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 24) {
+      $("#php-drupal").show();
+      $("#ruby-rails").hide();
+      $("#java-android").hide();
+      $("#css-design").hide();
+      $("#c-net").hide();
+      $("#quiz").hide();
+    } else if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 30) {
+      $("#css-design").show();
+      $("#ruby-rails").hide();
+      $("#php-drupal").hide();
+      $("#java-android").hide();
+      $("#c-net").hide();
+      $("#quiz").hide();
     }
 
   });
