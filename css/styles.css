@@ -5,3 +5,27 @@ body {
 h1 {
   text-align: center;
 }
+
+h3 {
+  text-align: center;
+}
+
+#ruby-rails {
+  display: none;
+}
+
+#php-drupal {
+  display: none;
+}
+
+#java-android {
+  display: none;
+}
+
+#css-design {
+  display: none;
+}
+
+#c-net {
+  display: none;
+}
