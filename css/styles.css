@@ -36,3 +36,15 @@ h3 {
   text-align: center;
   margin-top: 25px;
 }
+
+img {
+  width: 400px;
+  height: 150px;
+}
+
+header {
+  background-color: white;
+  border: black;
+  border-width: medium;
+  border-style: double;
+}

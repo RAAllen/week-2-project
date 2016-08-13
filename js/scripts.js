@@ -126,7 +126,7 @@ $(document).ready(function(){
     }
   });
 
-  $("#reQuiz").click(function(event){
+  $(".reQuiz").click(function(event){
     event.preventDefault();
     $("#quiz").show();
     $("#css-design").hide();
