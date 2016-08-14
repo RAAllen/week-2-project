@@ -62,8 +62,14 @@ ul {
   text-align: center;
 }
 
-@media (max-width: 500px) {
-  img {
-    visibility: hidden;
+@media (min-width: 300px) {
+  #pc {
+    display: none;
+  }
+}
+
+@media (max-width: 299px) {
+  #mobile {
+    display: none;
   }
 }

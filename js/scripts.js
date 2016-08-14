@@ -10,16 +10,18 @@ $(document).ready(function(){
     var questionSixPoints = $("#questionSixAnswer").val();
 
     var questionOneFinal = 0;
-      if (questionOnePoints === "cPoints") {
+      if (questionOnePoints === "cAnswer") {
         questionOneFinal = 1;
-      } else if (questionOnePoints === "javaPoints") {
+      } else if (questionOnePoints === "javaAnswers") {
         questionOneFinal = 2;
-      } else if (questionOnePoints === "rubyPoints") {
+      } else if (questionOnePoints === "rubyAnswer") {
         questionOneFinal = 3;
       } else if (questionOnePoints === "phpAnswer") {
         questionOneFinal = 4;
-      } else {
+      } else if (questionOnePoints === "cssAnswer") {
         questionOneFinal = 5;
+      } else {
+        alert("Please fill in an answer for question one.")
       }
 
     var questionTwoFinal = 0;
