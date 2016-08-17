@@ -21,7 +21,7 @@ $(document).ready(function(){
       } else if (questionOnePoints === "cssAnswer") {
         questionOneFinal = 5;
       } else {
-        alert("Please fill in an answer for question one.")
+        alert("Please fill in an answer for question one.");
       }
 
     var questionTwoFinal = 0;
@@ -33,8 +33,10 @@ $(document).ready(function(){
         questionOneFinal = 3;
       } else if (questionTwoPoints === "phpAnswer") {
         questionTwoFinal = 4;
-      } else {
+      } else if (questionTwoPoints === "cssAnswer") {
         questionTwoFinal = 5;
+      } else {
+        alert("Please fill in an answer for question two.");
       }
 
     var questionThreeFinal = 0;
@@ -46,8 +48,10 @@ $(document).ready(function(){
         questionThreeFinal = 3;
       } else if (questionThreePoints === "phpAnswer") {
         questionThreeFinal = 4;
-      } else {
+      }else if (questionThreePoints === "cssAnswer") {
         questionThreeFinal = 5;
+      } else {
+        alert("Please fill in an answer for question three.")
       }
 
     var questionFourFinal = 0;
@@ -59,8 +63,10 @@ $(document).ready(function(){
         questionFourFinal = 3;
       } else if (questionFourPoints === "phpAnswer") {
         questionFourFinal = 4;
-      } else {
+      } else if (questionFourPoints === "cssAnswer") {
         questionFourFinal = 5;
+      } else {
+        alert("Please fill in an answer for question four.")
       }
 
 
@@ -73,8 +79,10 @@ $(document).ready(function(){
         questionFiveFinal = 3;
       } else if (questionFivePoints === "phpAnswer") {
         questionFiveFinal = 4;
-      } else {
+      } else if (questionFivePoints === "cssAnswer") {
         questionFiveFinal = 5;
+      } else {
+        alert("Please fill in an answer for question five.")
       }
 
     var questionSixFinal = 0;
@@ -86,8 +94,10 @@ $(document).ready(function(){
         questionSixFinal = 3;
       } else if (questionSixPoints === "phpAnswer") {
         questionSixFinal = 4;
-      } else {
+      } else if (questionSixPoints === "cssAnswer") {
         questionSixFinal = 5;
+      } else {
+        alert("Please fill in your answer for question six.")
       }
 
     if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 9) {
