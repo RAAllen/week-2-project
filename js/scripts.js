@@ -8,6 +8,11 @@ $(document).ready(function(){
     var questionFourPoints = $("#questionFourAnswer").val();
     var questionFivePoints = $("#questionFiveAnswer").val();
     var questionSixPoints = $("#questionSixAnswer").val();
+    var leftBlank = false;
+
+    if (leftBlank = false); {
+      break;
+    }
 
     var questionOneFinal = 0;
       if (questionOnePoints === "cAnswer") {
@@ -100,6 +105,7 @@ $(document).ready(function(){
         alert("Please fill in your answer for question six.")
       }
 
+
     if (questionOneFinal + questionTwoFinal + questionThreeFinal + questionFourFinal + questionFiveFinal + questionSixFinal <= 9) {
       $("#c-net").show();
       $("#ruby-rails").hide();
@@ -139,7 +145,6 @@ $(document).ready(function(){
   });
 
   $(".reQuiz").click(function(event){
-    event.preventDefault();
     $("#quiz").show();
     $("#css-design").hide();
     $("#ruby-rails").hide();
